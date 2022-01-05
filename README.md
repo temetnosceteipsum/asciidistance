@@ -1,3 +1,3 @@
 # asciidistance
 
-determines the ascii distance between an input string of arbitrary length and a randomly generated string of identical length
+determines the absolute ascii distances between two randomly generated strings of input length and the ratio between the two distances
