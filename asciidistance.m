@@ -27,12 +27,10 @@ x = char(floor(string0));
 
 z = (input0 - x);
 
-ascii0 = sum(abs(z),'all');
-ascii1 = abs(sum(z,'all'));
+ascii0 = sum(z,'all');
 
 disp(ascii0);
-disp(ascii1);
 
-disp(ascii0/ascii1/length0);
+disp(length0/ascii0);
 
 end
