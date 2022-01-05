@@ -1,20 +1,16 @@
 # asciidistance
 
-determines the absolute ascii distances between two randomly generated DNA oligo sequences of arbitrary input length
-
-the limit of the ratio between these ascii distances approaches the inverse of the input sequence length
-
+determines the absolute ascii distances between a randomly generated DNA oligonucleotide sequence of arbitrary input length and its complementary strand
 
 sample usage:
 
-asciidistance(44);
+>> asciidistance(44);
 
-AACCAGACCGCAGCCCGGAAAAGCAGGCAGGACAGAGCGCGAAA
+CAGCAACACGGGGAAAGCCAGGGAGCGCCAACAGAACAAACGGA
+GTCGTTGTGCCCCTTTCGGTCCCTCGCGGTTGTCTTGTTTGCCT
 
-AAGCCGCCCGAGCAAAACGGCAAGCGCGCGGCGCGGCGACCCAA
+   334
 
-    14
+   446
 
-   106
-   
-    0.0030
+    0.0170
