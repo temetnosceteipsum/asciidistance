@@ -14,7 +14,6 @@ if size0 ~= 1
 
 end
 
-
 rng('shuffle');
 
 a = 32;
@@ -36,6 +35,6 @@ disp(ascii0);
 
 ratio0 = ascii1/ascii0;
 
-disp(ratio0/length0);
+disp(ratio0);
 
 end
