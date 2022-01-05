@@ -1,20 +1,19 @@
-function z = asciidistance(input0)
+function z = asciidistance(length0)
 
 if nargin ~= 1
 
-    error('please enter a string');
+    error('please enter an integer');
 
 end
 
-size0 = size(input0);
+size0 = size(length0);
 
-if size0(1) ~= 1
+if size0 ~= 1
 
-    error ('please enter a string');
+    error ('please enter an integer');
 
 end
 
-length0 = size0(2);
 
 rng('shuffle');
 
@@ -22,15 +21,19 @@ a = 32;
 b = 126;
 
 string0 = (b-a).*rand(length0,1) + a;
+string1 = (b-a).*rand(length0,1) + a;
 
 x = char(floor(string0));
+y = char(floor(string1));
 
-z = (input0 - x);
+z = (x - y);
 
-ascii0 = sum(z,'all');
+ascii0 = sum(abs(z),'all');
+ascii1 = abs(sum(z,'all'));
 
 disp(ascii0);
+disp(ascii1);
 
-disp(length0/ascii0);
+disp(ascii1/ascii0);
 
 end
