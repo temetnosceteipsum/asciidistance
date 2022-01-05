@@ -19,8 +19,8 @@ rng('shuffle');
 a = 32;
 b = 126;
 
-string0 = (b-a).*rand(length0,1) + a;
-string1 = (b-a).*rand(length0,1) + a;
+string0 = (b-a).*rand(length0,1)' + a;
+string1 = (b-a).*rand(length0,1)' + a;
 
 x = char(floor(string0));
 y = char(floor(string1));
@@ -29,6 +29,9 @@ z = (x - y);
 
 ascii0 = sum(abs(z),'all');
 ascii1 = abs(sum(z,'all'));
+
+disp(x);
+disp(y);
 
 disp(ascii1);
 disp(ascii0);
