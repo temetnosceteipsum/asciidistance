@@ -14,6 +14,7 @@ if size0 ~= 1
 
 end
 
+
 rng('shuffle');
 
 a = 32;
@@ -30,9 +31,11 @@ z = (x - y);
 ascii0 = sum(abs(z),'all');
 ascii1 = abs(sum(z,'all'));
 
-disp(ascii0);
 disp(ascii1);
+disp(ascii0);
 
-disp(ascii1/ascii0);
+ratio0 = ascii1/ascii0;
+
+disp(ratio0/length0);
 
 end
