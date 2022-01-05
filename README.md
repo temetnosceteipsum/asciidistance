@@ -7,6 +7,7 @@ the limit of the ratio between these ascii distances approaches the inverse of t
 sample output:
 
 asciidistance(44);
+
 AACCAGACCGCAGCCCGGAAAAGCAGGCAGGACAGAGCGCGAAA
 AAGCCGCCCGAGCAAAACGGCAAGCGCGCGGCGCGGCGACCCAA
     14
