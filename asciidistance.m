@@ -18,7 +18,7 @@ dna0 = [65,67,71,84];
 dnacomp = [84,71,67,65];
 
 a = 1;
-b = 4;
+b = 5;
 
 string0 = (b-a).*rand(length0,1)' + a;
 
