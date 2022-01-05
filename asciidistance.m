@@ -1,4 +1,4 @@
-function z = asciidistance(length0)
+function z = asciidistanceDNA(length0)
 
 if nargin ~= 1
 
@@ -14,16 +14,19 @@ if size0 ~= 1
 
 end
 
-rng('shuffle');
+dna = [65,67,71,84];
 
-a = 32;
-b = 126;
+a = 1;
+b = 4;
 
 string0 = (b-a).*rand(length0,1)' + a;
 string1 = (b-a).*rand(length0,1)' + a;
 
-x = char(floor(string0));
-y = char(floor(string1));
+x = floor(string0);
+y = floor(string1);
+
+x = char(dna(x));
+y = char(dna(y));
 
 z = (x - y);
 
