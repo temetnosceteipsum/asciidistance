@@ -14,6 +14,8 @@ if size0 ~= 1
 
 end
 
+rng('shuffle');
+
 dna0 = [65,67,71,84];
 dnacomp = [84,71,67,65];
 
