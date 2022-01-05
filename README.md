@@ -4,7 +4,7 @@ determines the absolute ascii distances between a randomly generated DNA oligonu
 
 sample usage:
 
->> asciidistance(44);
+asciidistance(44);
 
 CAGCAACACGGGGAAAGCCAGGGAGCGCCAACAGAACAAACGGA
 GTCGTTGTGCCCCTTTCGGTCCCTCGCGGTTGTCTTGTTTGCCT
