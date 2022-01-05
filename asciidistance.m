@@ -35,6 +35,6 @@ disp(ascii0);
 
 ratio0 = ascii1/ascii0;
 
-disp(ratio0);
+disp(ratio0/length0);
 
 end
