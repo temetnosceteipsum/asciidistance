@@ -1,4 +1,4 @@
-function z = asciidistanceDNA(length0)
+function z = asciidistance(length0)
 
 if nargin ~= 1
 
@@ -14,27 +14,26 @@ if size0 ~= 1
 
 end
 
-dna = [65,67,71,84];
+dna0 = [65,67,71,84];
+dnacomp = [84,71,67,65];
 
 a = 1;
 b = 4;
 
 string0 = (b-a).*rand(length0,1)' + a;
-string1 = (b-a).*rand(length0,1)' + a;
 
 x = floor(string0);
-y = floor(string1);
 
-x = char(dna(x));
-y = char(dna(y));
+x0 = char(dna0(x));
+y0 = char(dnacomp(x));
 
-z = (x - y);
+z = (x0 - y0);
 
 ascii0 = sum(abs(z),'all');
 ascii1 = abs(sum(z,'all'));
 
-disp(x);
-disp(y);
+disp(x0);
+disp(y0);
 
 disp(ascii1);
 disp(ascii0);
