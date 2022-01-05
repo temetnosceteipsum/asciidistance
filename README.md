@@ -1,5 +1,5 @@
 # asciidistance
 
-determines the absolute ascii distances between two randomly generated strings of input length
+determines the absolute ascii distances between two randomly generated DNA oligo sequences of arbitrary input length
 
-the limit of the ratio between these distances approaches the inverse of the input length
+the limit of the ratio between these ascii distances approaches the inverse of the input sequence length
