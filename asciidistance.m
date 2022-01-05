@@ -14,7 +14,6 @@ if size0 ~= 1
 
 end
 
-
 rng('shuffle');
 
 a = 32;
